@@ -1,0 +1,96 @@
+http://www.csdn.net/article/a/2014-06-18/15819053
+http://segmentfault.com/a/1190000000349384
+http://segmentfault.com/a/1190000000366923
+http://www.oschina.net/p/docker
+http://dockerpool.com/static/books/docker_practice/install/ubuntu.html
+https://www.gitbook.com/book/yeasy/docker_practice/details
+https://www.gitbook.com/book/yeasy/docker_practice/details
+http://dockerpool.com/static/books/docker_practice/index.html
+http://coolshell.cn/articles/17010.html
+http://www.docker.org.cn/book/docker.html
+http://www.widuu.com/docker/
+http://www.blogjava.net/yongboy/archive/2013/12/12/407498.html
+http://tech.meituan.com/autobuild.html
+http://help.aliyun.com/knowledge_detail.htm?knowledgeId=5974865
+http://oilbeater.com/docker/2014/06/13/why-you-should-care-about-docker.html
+http://www.zhihu.com/question/22969309
+http://www.muzixing.com/pages/2014/12/03/dockerbu-shu-sdnhuan-jing.html
+https://linux.cn/article-5579-1.html
+http://blog.saymagic.cn/2015/06/01/learning-docker.html
+http://os.51cto.com/art/201411/456204.htm
+http://blog.tankywoo.com/docker/2014/05/08/docker-2-dockerfile.html
+http://blog.tankywoo.com/docker/2014/05/08/docker-4-summary.html
+http://www.hjue.me/post/docker-nsenter
+http://www.ibm.com/developerworks/cn/opensource/os-cn-JenkinsDockerSahi/index.html
+http://blog.opskumu.com/docker.html
+https://book.douban.com/subject/26285268/
+http://www.openfoundry.org/tw/tech-column/9319-docker-101
+http://www.kancloud.cn/thinkphp/docker-guide/39728
+http://www.kancloud.cn/thinkphp/docker-guide/39707
+
+http://www.open-open.com/lib/view/open1410568733492.html
+http://17173ops.com/2014/10/13/docker%E5%9F%BA%E7%A1%80%E4%B8%8E%E9%AB%98%E7%BA%A7.shtml
+
+
+
+http://www.open-open.com/lib/view/open1410568733492.html
+http://17173ops.com/2014/10/13/docker%E5%9F%BA%E7%A1%80%E4%B8%8E%E9%AB%98%E7%BA%A7.shtml
+http://dockerpool.com/static/books/docker_practice/install/centos.html
+
+
+http://segmentfault.com/a/1190000002620961
+http://www.infoq.com/cn/articles/centos7-practical-kubernetes-deployment
+http://blog.liuts.com/category/42/1/1/
+http://www.infoq.com/cn/articles/centos7-practical-kubernetes-deployment
+http://www.mincoder.com/article/4579.shtml
+http://www.aixchina.net/home/space.php?uid=59140&do=blog&id=143615
+http://kubernetes.io/v1.0/docs/admin/ovs-networking.html
+http://www.mamicode.com/info-detail-414173.html
+http://dockone.io/article/520
+http://www.csdn.net/article/2015-06-12/2824937
+http://www.csdn.net/article/2015-06-11/2824933
+http://www.open-open.com/lib/view/open1437616369584.html
+
+
+http://dockerpool.com/static/books/docker_practice/fig/README.html
+http://developer.openstack.org/api-ref-identity-v2.html
+https://github.com/GoogleCloudPlatform/kubernetes
+http://kubernetes.io/v1.0/
+http://www.infoq.com/cn/author/%E8%82%96%E5%BE%B7%E6%97%B6
+http://segmentfault.com/a/1190000002620961
+
+Pipework、Weave、Flannel各自的优势和区别 
+http://dockone.io/question/259
+Docker网络详解及pipework源码解读与实践   
+http://www.infoq.com/cn/articles/docker-network-and-pipework-open-source-explanation-practice
+Docker高级应用之多台主机网络互联
+http://www.mincoder.com/article/4579.shtml
+
+
+
+
+
+
+
+Docker Machine, Swarm,和Compose编排分布式应用 ：http://www.jdon.com/46901
+使用 Docker Swarm 对 Docker 进行规模扩展 ：http://www.oschina.net/translate/scaling-docker-with-swarm
+剖析Docker Swarm和Mesos：是什么？如何结合？有什么优势？ ：http://dockone.io/article/213
+介绍Docker Swarm + Mesos.pdf：http://www.open-open.com/doc/view/1de6a03a343e4f5cab8cf7fd6e883317
+剖析Docker Swarm和Mesos的结合有何优势：http://cloud.51cto.com/art/201503/467002.htm
+Chronos+Marathon：在Mesos上运行批量和长期高可用服务 ：http://geek.csdn.net/news/detail/2578
+Mesos渐入主流，Twitter模式有望“无限复制”：http://news.cecb2b.com/info/20140225/1939856.shtml
+Mesos框架对比：Marathon 和 Aurora：http://www.open-open.com/lib/view/open1431661251044.html
+http://wenku.baidu.com/link?url=LiMoog3GkL3DMVzd1TDQPJD5HuznXVe0l0DPJmGThmsAxZYI-VSdks9m-ubAcmQsuoGQKWH2bIdzPB8QM8F1KBwjVuuTNgzNNK6MEY1aqU_
+单机版Mesos + Marathon + Deimos + Docker：http://www.tuicool.com/articles/FjeAbq
+开源项目Marathon：让你的数据中心像谷歌一样运行：http://www.csdn.net/article/2013-09-06/2816861-Marathon
+使用Mesos和Marathon管理Docker集群：http://www.jdon.com/artichect/managing-docker-clusters-using-mesos-and-marathon.html
+7条命令在docker中部署Mesos集群:http://blog.csdn.net/yangzhenping/article/details/42921211
+
+SSL：
+http://www.cnblogs.com/yanghuahui/archive/2012/06/25/2561568.html
+http://www.linuxidc.com/Linux/2013-08/88271.htm
+
+
+
+
+
