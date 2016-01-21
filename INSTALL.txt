@@ -1,42 +1,42 @@
-1¡¢°²×°Ö®Ç°
+1ã€å®‰è£…ä¹‹å‰
 uname -a
 Linux ubuntu 3.13.0-32-generic #57~precise1-Ubuntu SMP Tue Jul 15 03:51:20 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
 cat /etc/issue
 Ubuntu 12.04.5 LTS \n \l
 
-2¡¢¸üĞÂÄÚºË
+2ã€æ›´æ–°å†…æ ¸
 sudo apt-get update
 sudo apt-get install linux-image-generic-lts-raring linux-headers-generic-lts-raring
 sudo reboot
 
-3¡¢¸üĞÂÄÚºËÖ®ºó
+3ã€æ›´æ–°å†…æ ¸ä¹‹å
 uname -a
 Linux ubuntu 3.13.0-32-generic #57~precise1-Ubuntu SMP Tue Jul 15 03:51:20 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
 cat /etc/issue
 Ubuntu 12.04.5 LTS \n \l
 
-4¡¢°²×°²½Öè
+4ã€å®‰è£…æ­¥éª¤
 sudo apt-get install apt-transport-https
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
 sudo bash -c "echo deb https://get.docker.io/ubuntu docker main > /etc/apt/sources.list.d/docker.list"
 sudo apt-get update
 sudo apt-get install lxc-docker
 sudo service docker start
-°²×°Íê±Ï²é¿´Ä¬ÈÏÉú³ÉµÄÍøÂçĞÅÏ¢
+å®‰è£…å®Œæ¯•æŸ¥çœ‹é»˜è®¤ç”Ÿæˆçš„ç½‘ç»œä¿¡æ¯
 sudo apt-get install bridge-utils
 brctl show
 
 
-5¡¢ÏÂÔØ¾µÏñ
+5ã€ä¸‹è½½é•œåƒ
 docker images
 docker search ubuntu
 registry.hub.docker.com
 sudo docker pull ubuntu:12.04
 sudo docker pull registry.hub.docker.com/ubuntu:12.04
-»òÕßÖ¸¶¨ÆäËû²Ö¿â£ºsudo docker pull dl.dockerpool.com:5000/ubuntu:12.04
+æˆ–è€…æŒ‡å®šå…¶ä»–ä»“åº“ï¼šsudo docker pull dl.dockerpool.com:5000/ubuntu:12.04
 docker images
 
-6¡¢Ê¹ÓÃ¸Ã¾µÏñ´´½¨ÈİÆ÷ÔËĞĞbashÓ¦ÓÃ
+6ã€ä½¿ç”¨è¯¥é•œåƒåˆ›å»ºå®¹å™¨è¿è¡Œbashåº”ç”¨
 docker ps
 docker ps -a
 docker ps -a -q
@@ -46,19 +46,19 @@ ip addr
 ip addr show
 ip route
 
-7¡¢ĞŞ¸ÄÒÑÓĞµÄ¾µÏñ£¨±È½Ï·±Ëö¸´ÔÓ£©
-¾µÏñ£ºDocker ¾µÏñÊÇÔõÃ´ÊµÏÖÔöÁ¿µÄĞŞ¸ÄºÍÎ¬»¤µÄ£¿ Ã¿¸ö¾µÏñ¶¼ÓÉºÜ¶à²ã´Î¹¹³É£¬Docker Ê¹ÓÃ Union FS ½«ÕâĞ©²»Í¬µÄ²ã½áºÏµ½Ò»¸ö¾µÏñÖĞÈ¥¡£
-Í¨³£ Union FS ÓĞÁ½¸öÓÃÍ¾, Ò»·½Ãæ¿ÉÒÔÊµÏÖ²»½èÖú LVM¡¢RAID ½«¶à¸ö disk ¹Òµ½Í¬Ò»¸öÄ¿Â¼ÏÂ,ÁíÒ»¸ö¸ü³£ÓÃµÄ¾ÍÊÇ½«Ò»¸öÖ»¶ÁµÄ·ÖÖ§ºÍÒ»¸ö¿ÉĞ´µÄ·ÖÖ§ÁªºÏÔÚÒ»Æğ£¬
-Live CD ÕıÊÇ»ùÓÚ´Ë·½·¨¿ÉÒÔÔÊĞíÔÚ¾µÏñ²»±äµÄ»ù´¡ÉÏÔÊĞíÓÃ»§ÔÚÆäÉÏ½øĞĞÒ»Ğ©Ğ´²Ù×÷¡£ Docker ÔÚ AUFS ÉÏ¹¹½¨µÄÈİÆ÷Ò²ÊÇÀûÓÃÁËÀàËÆµÄÔ­Àí¡£
+7ã€ä¿®æ”¹å·²æœ‰çš„é•œåƒï¼ˆæ¯”è¾ƒç¹çå¤æ‚ï¼‰
+é•œåƒï¼šDocker é•œåƒæ˜¯æ€ä¹ˆå®ç°å¢é‡çš„ä¿®æ”¹å’Œç»´æŠ¤çš„ï¼Ÿ æ¯ä¸ªé•œåƒéƒ½ç”±å¾ˆå¤šå±‚æ¬¡æ„æˆï¼ŒDocker ä½¿ç”¨ Union FS å°†è¿™äº›ä¸åŒçš„å±‚ç»“åˆåˆ°ä¸€ä¸ªé•œåƒä¸­å»ã€‚
+é€šå¸¸ Union FS æœ‰ä¸¤ä¸ªç”¨é€”, ä¸€æ–¹é¢å¯ä»¥å®ç°ä¸å€ŸåŠ© LVMã€RAID å°†å¤šä¸ª disk æŒ‚åˆ°åŒä¸€ä¸ªç›®å½•ä¸‹,å¦ä¸€ä¸ªæ›´å¸¸ç”¨çš„å°±æ˜¯å°†ä¸€ä¸ªåªè¯»çš„åˆ†æ”¯å’Œä¸€ä¸ªå¯å†™çš„åˆ†æ”¯è”åˆåœ¨ä¸€èµ·ï¼Œ
+Live CD æ­£æ˜¯åŸºäºæ­¤æ–¹æ³•å¯ä»¥å…è®¸åœ¨é•œåƒä¸å˜çš„åŸºç¡€ä¸Šå…è®¸ç”¨æˆ·åœ¨å…¶ä¸Šè¿›è¡Œä¸€äº›å†™æ“ä½œã€‚ Docker åœ¨ AUFS ä¸Šæ„å»ºçš„å®¹å™¨ä¹Ÿæ˜¯åˆ©ç”¨äº†ç±»ä¼¼çš„åŸç†ã€‚
 
 apt-get install memcached -y
 exit
 docker commit -m "ubuntu12.04-memcached" -a "JunneYang" b7c013c79b7c ubuntu12.04:memcached
 docker images
 docker run -i -t ubuntu12.04:memcached /bin/bash
-¿ÉÒÔÊ¹ÓÃmemcachedÃüÁîÁË
+å¯ä»¥ä½¿ç”¨memcachedå‘½ä»¤äº†
 
-8¡¢Ê¹ÓÃDockerfile´´½¨¾µÏñ£¨ÍÆ¼ö·½Ê½£©
+8ã€ä½¿ç”¨Dockerfileåˆ›å»ºé•œåƒï¼ˆæ¨èæ–¹å¼ï¼‰
 vi Dockerfile
 # This is a comment
 FROM ubuntu:12.04
@@ -69,7 +69,7 @@ docker build -t="ubuntu:memcached" .
 docker images
 docker run -i -t ubuntu:memcached /bin/bash
 
-9¡¢Dockerfile½øÒ»²½
+9ã€Dockerfileè¿›ä¸€æ­¥
 vi Dockerfile
 # This is a comment
 FROM ubuntu:12.04
@@ -105,118 +105,118 @@ sudo docker inspect memcached | grep Memory
 sudo docker inspect memcached
 
 docker inspect a0b4d7b5110e
-²é¿´dockerÈİÆ÷ÏêÇé
+æŸ¥çœ‹dockerå®¹å™¨è¯¦æƒ…
 docker port a0b4d7b5110e
 docker rm -f $(docker ps -a -q)
 docker logs -f $(docker ps -a -q)
 docker rmi -f <image id/name>
 docker exec -it 283124b89229  bash
 
-RUN ÃüÁî£ºÔÚÉÏÃæFROM Ö¸¶¨µÄ¾µÏñÀïÖ´ĞĞÈÎºÎÃüÁî
-¸ñÊ½£ºRUN <command> (Õâ¸öÃüÁîÔËĞĞÒ»¸öshellÖĞ - '/bin/sh -c')
-»ò£ºRUN ["executable", "param1", "param2"]
-RUN ÃüÁîµÈ¼ÛÓÚ£ºdocker run image_name command
+RUN å‘½ä»¤ï¼šåœ¨ä¸Šé¢FROM æŒ‡å®šçš„é•œåƒé‡Œæ‰§è¡Œä»»ä½•å‘½ä»¤
+æ ¼å¼ï¼šRUN <command> (è¿™ä¸ªå‘½ä»¤è¿è¡Œä¸€ä¸ªshellä¸­ - '/bin/sh -c')
+æˆ–ï¼šRUN ["executable", "param1", "param2"]
+RUN å‘½ä»¤ç­‰ä»·äºï¼šdocker run image_name command
 
 CMD  and  ENTRYPOINT
-ÃüÁîÉèÖÃÔÚÈİÆ÷Æô¶¯Ê±Ö´ĞĞÃüÁî
-ENTRYPOINT£¬±íÊ¾¾µÏñÔÚ³õÊ¼»¯Ê±ĞèÒªÖ´ĞĞµÄÃüÁî£¬²»¿É±»ÖØĞ´¸²¸Ç£¬Ğè½÷¼Ç
-CMD£¬±íÊ¾¾µÏñÔËĞĞÄ¬ÈÏ²ÎÊı£¬¿É±»ÖØĞ´¸²¸Ç
-ENTRYPOINT/CMD¶¼Ö»ÄÜÔÚÎÄ¼şÖĞ´æÔÚÒ»´Î£¬²¢ÇÒ×îºóÒ»¸öÉúĞ§(¶à¸ö´æÔÚ£¬Ö»ÓĞ×îºóÒ»¸öÉúĞ§£¬ÆäËüÎŞĞ§£¡)
-ĞèÒª³õÊ¼»¯ÔËĞĞ¶à¸öÃüÁî£¬±Ë´ËÖ®¼ä¿ÉÒÔÊ¹ÓÃ && ¸ô¿ª£¬µ«×îºóÒ»¸öĞëÒªÎªÎŞÏŞÔËĞĞµÄÃüÁî£¬ĞèÇĞ¼Ç£¡
-ENTRYPOINT/CMD£¬Ò»°ãÁ½Õß¿ÉÒÔÅäºÏÊ¹ÓÃ£¬±ÈÈç£º
+å‘½ä»¤è®¾ç½®åœ¨å®¹å™¨å¯åŠ¨æ—¶æ‰§è¡Œå‘½ä»¤
+ENTRYPOINTï¼Œè¡¨ç¤ºé•œåƒåœ¨åˆå§‹åŒ–æ—¶éœ€è¦æ‰§è¡Œçš„å‘½ä»¤ï¼Œä¸å¯è¢«é‡å†™è¦†ç›–ï¼Œéœ€è°¨è®°
+CMDï¼Œè¡¨ç¤ºé•œåƒè¿è¡Œé»˜è®¤å‚æ•°ï¼Œå¯è¢«é‡å†™è¦†ç›–
+ENTRYPOINT/CMDéƒ½åªèƒ½åœ¨æ–‡ä»¶ä¸­å­˜åœ¨ä¸€æ¬¡ï¼Œå¹¶ä¸”æœ€åä¸€ä¸ªç”Ÿæ•ˆ(å¤šä¸ªå­˜åœ¨ï¼Œåªæœ‰æœ€åä¸€ä¸ªç”Ÿæ•ˆï¼Œå…¶å®ƒæ— æ•ˆï¼)
+éœ€è¦åˆå§‹åŒ–è¿è¡Œå¤šä¸ªå‘½ä»¤ï¼Œå½¼æ­¤ä¹‹é—´å¯ä»¥ä½¿ç”¨ && éš”å¼€ï¼Œä½†æœ€åä¸€ä¸ªé¡»è¦ä¸ºæ— é™è¿è¡Œçš„å‘½ä»¤ï¼Œéœ€åˆ‡è®°ï¼
+ENTRYPOINT/CMDï¼Œä¸€èˆ¬ä¸¤è€…å¯ä»¥é…åˆä½¿ç”¨ï¼Œæ¯”å¦‚ï¼š
 ENTRYPOINT ["/usr/sbin/sshd"]
 CMD ["-D"]
 
-CMD ENTRYPOINT²»Í¬£º
+CMD ENTRYPOINTä¸åŒï¼š
 http://segmentfault.com/q/1010000000417103
-DockerfileÎÄÕÂ£º
+Dockerfileæ–‡ç« ï¼š
 http://my.oschina.net/mfk123/blog/292417
 http://segmentfault.com/a/1190000002711357
 http://www.cnblogs.com/elnino/p/3899136.html
-ÎªÊ²Ã´²»ĞèÒªÔÚDockerÈİÆ÷ÖĞÔËĞĞsshd£º
+ä¸ºä»€ä¹ˆä¸éœ€è¦åœ¨Dockerå®¹å™¨ä¸­è¿è¡Œsshdï¼š
 http://www.linuxeden.com/html/news/20140924/155749.html
-Docker Explained: How To Create Docker Containers Running Memcached£º
+Docker Explained: How To Create Docker Containers Running Memcachedï¼š
 https://www.digitalocean.com/community/tutorials/docker-explained-how-to-create-docker-containers-running-memcached
 
-¾µÏñµ¼Èë£ºsudo cat ubuntu-14.04-x86_64-minimal.tar.gz  |docker import - ubuntu:14.04
-ÉÏ´«¾µÏñ£ºsudo docker push ouruser/sinatra
-±£´æ¾µÏñ£ºdocker save -o ubuntu_12.04_memcached.tar.gz ubuntu:memcached
-ÔØÈë¾µÏñ£ºsudo docker load --input ubuntu_14.04.tar
+é•œåƒå¯¼å…¥ï¼šsudo cat ubuntu-14.04-x86_64-minimal.tar.gz  |docker import - ubuntu:14.04
+ä¸Šä¼ é•œåƒï¼šsudo docker push ouruser/sinatra
+ä¿å­˜é•œåƒï¼šdocker save -o ubuntu_12.04_memcached.tar.gz ubuntu:memcached
+è½½å…¥é•œåƒï¼šsudo docker load --input ubuntu_14.04.tar
 
-10¡¢DockerÈİÆ÷Ô­Àí
-µ±ÀûÓÃ docker run À´´´½¨ÈİÆ÷Ê±£¬Docker ÔÚºóÌ¨ÔËĞĞµÄ±ê×¼²Ù×÷°üÀ¨£º
+10ã€Dockerå®¹å™¨åŸç†
+å½“åˆ©ç”¨ docker run æ¥åˆ›å»ºå®¹å™¨æ—¶ï¼ŒDocker åœ¨åå°è¿è¡Œçš„æ ‡å‡†æ“ä½œåŒ…æ‹¬ï¼š
 
-¼ì²é±¾µØÊÇ·ñ´æÔÚÖ¸¶¨µÄ¾µÏñ£¬²»´æÔÚ¾Í´Ó¹«ÓĞ²Ö¿âÏÂÔØ
-ÀûÓÃ¾µÏñ´´½¨²¢Æô¶¯Ò»¸öÈİÆ÷
-·ÖÅäÒ»¸öÎÄ¼şÏµÍ³£¬²¢ÔÚÖ»¶ÁµÄ¾µÏñ²ãÍâÃæ¹ÒÔØÒ»²ã¿É¶ÁĞ´²ã
-´ÓËŞÖ÷Ö÷»úÅäÖÃµÄÍøÇÅ½Ó¿ÚÖĞÇÅ½ÓÒ»¸öĞéÄâ½Ó¿Úµ½ÈİÆ÷ÖĞÈ¥
-´ÓµØÖ·³ØÅäÖÃÒ»¸ö ip µØÖ·¸øÈİÆ÷
-Ö´ĞĞÓÃ»§Ö¸¶¨µÄÓ¦ÓÃ³ÌĞò
-Ö´ĞĞÍê±ÏºóÈİÆ÷±»ÖÕÖ¹
+æ£€æŸ¥æœ¬åœ°æ˜¯å¦å­˜åœ¨æŒ‡å®šçš„é•œåƒï¼Œä¸å­˜åœ¨å°±ä»å…¬æœ‰ä»“åº“ä¸‹è½½
+åˆ©ç”¨é•œåƒåˆ›å»ºå¹¶å¯åŠ¨ä¸€ä¸ªå®¹å™¨
+åˆ†é…ä¸€ä¸ªæ–‡ä»¶ç³»ç»Ÿï¼Œå¹¶åœ¨åªè¯»çš„é•œåƒå±‚å¤–é¢æŒ‚è½½ä¸€å±‚å¯è¯»å†™å±‚
+ä»å®¿ä¸»ä¸»æœºé…ç½®çš„ç½‘æ¡¥æ¥å£ä¸­æ¡¥æ¥ä¸€ä¸ªè™šæ‹Ÿæ¥å£åˆ°å®¹å™¨ä¸­å»
+ä»åœ°å€æ± é…ç½®ä¸€ä¸ª ip åœ°å€ç»™å®¹å™¨
+æ‰§è¡Œç”¨æˆ·æŒ‡å®šçš„åº”ç”¨ç¨‹åº
+æ‰§è¡Œå®Œæ¯•åå®¹å™¨è¢«ç»ˆæ­¢
 
 docker stop 47a07e01a30d
 docker start 47a07e01a30d
 docker logs -f 47a07e01a30d
 
-½øÈëÈİÆ÷
-Docker execÓëDocker attach£ºhttp://m.blog.csdn.net/blog/halcyonbaby/46884605
+è¿›å…¥å®¹å™¨
+Docker execä¸Docker attachï¼šhttp://m.blog.csdn.net/blog/halcyonbaby/46884605
 http://blog.csdn.net/halcyonbaby/article/details/46884605
-Ê¹ÓÃ OpenVPN »¥Áª¶àµØ»ú·¿¼°Dokcer¿çÖ÷»ú/»ú·¿Í¨Ñ¶£ºhttp://lsproc.com/tag/docker
-Docker ³£¼ûÎÊÌâ (FAQ)£ºhttp://lsproc.com/tag/faq#toc_12
-DockerÖÕ¼«Ö¸ÄÏ(Àí½â±È½ÏÉîÈë)£º http://dockone.io/article/133
-´ó¼Ò¾õµÃÏÖÔÚµÄÎ¢·şÎñ¼Ü¹¹×îĞèÒªÊ²Ã´£¿ £ºhttp://dockone.io/question/426
-DockerÔ¶³Ìpython API²Ù×÷ÈİÆ÷Ò»Àı£ºhttp://blog.liuts.com/post/241/
-DockerÑ§Ï°±Ê¼ÇÖ®¶ş£¬»ùÓÚDockerfile´î½¨JAVA TomcatÔËĞĞ»·¾³£ºhttp://www.blogjava.net/yongboy/archive/2013/12/16/407643.html
-µ¼Èëµ¼³öÈİÆ÷¿ìÕÕ¡¢ÈİÆ÷É¾³ı
+ä½¿ç”¨ OpenVPN äº’è”å¤šåœ°æœºæˆ¿åŠDokcerè·¨ä¸»æœº/æœºæˆ¿é€šè®¯ï¼šhttp://lsproc.com/tag/docker
+Docker å¸¸è§é—®é¢˜ (FAQ)ï¼šhttp://lsproc.com/tag/faq#toc_12
+Dockerç»ˆææŒ‡å—(ç†è§£æ¯”è¾ƒæ·±å…¥)ï¼š http://dockone.io/article/133
+å¤§å®¶è§‰å¾—ç°åœ¨çš„å¾®æœåŠ¡æ¶æ„æœ€éœ€è¦ä»€ä¹ˆï¼Ÿ ï¼šhttp://dockone.io/question/426
+Dockerè¿œç¨‹python APIæ“ä½œå®¹å™¨ä¸€ä¾‹ï¼šhttp://blog.liuts.com/post/241/
+Dockerå­¦ä¹ ç¬”è®°ä¹‹äºŒï¼ŒåŸºäºDockerfileæ­å»ºJAVA Tomcatè¿è¡Œç¯å¢ƒï¼šhttp://www.blogjava.net/yongboy/archive/2013/12/16/407643.html
+å¯¼å…¥å¯¼å‡ºå®¹å™¨å¿«ç…§ã€å®¹å™¨åˆ é™¤
 
 
-11¡¢docker¾µÏñ
+11ã€dockeré•œåƒ
 sudo docker run --restart always -d -p 5000:5000 registry
 docker images
 sudo docker tag c838cf173453 http://10.20.0.88:5000/test
 docker rmi 'http://10.20.0.88:5000/test'
 sudo docker push 10.20.0.88:5000/test
-Ê¹ÓÃDocker registry¾µÏñ´´½¨Ë½ÓĞ²Ö¿â £ºhttp://blog.csdn.net/delphiwcdj/article/details/43099877
-docker Ë½ÓĞ·½²Ö¿âÏÂÔØ¾µÏñ ±¨´í£ºhttp://www.zhihu.com/question/26718775/answer/35291256
+ä½¿ç”¨Docker registryé•œåƒåˆ›å»ºç§æœ‰ä»“åº“ ï¼šhttp://blog.csdn.net/delphiwcdj/article/details/43099877
+docker ç§æœ‰æ–¹ä»“åº“ä¸‹è½½é•œåƒ æŠ¥é”™ï¼šhttp://www.zhihu.com/question/26718775/answer/35291256
 
 docker login -u junneyang -p Admin@123 -e 597092663@qq.com https://registry.hub.docker.com
 docker push https://registry.hub.docker.com/nsc/ubuntu:1.0.0.1
 
-12¡¢Êı¾İ¾í
+12ã€æ•°æ®å·
 docker run --name=memcached -d -p 45001:11211 -v /root/docker/memcached:/root:ro ubuntu:memcached
 ls /root/
 Dockerfile  HelloWorld.py  test.py  test.txt  ubuntu_12.04_memcached.tar.gz
-ÉÏÃæµÄÃüÁî¼ÓÔØÖ÷»úµÄ /root/docker/memcached Ä¿Â¼µ½ÈİÆ÷µÄ /root Ä¿Â¼¡£²¢ÇÒÖ¸¶¨Ö»¶ÁÈ¨ÏŞ¡£
-Õâ¸ö¹¦ÄÜÔÚ½øĞĞ²âÊÔµÄÊ±ºòÊ®·Ö·½±ã£¬±ÈÈçÓÃ»§¿ÉÒÔ·ÅÖÃÒ»Ğ©³ÌĞòµ½±¾µØÄ¿Â¼ÖĞ£¬À´²é¿´ÈİÆ÷ÊÇ·ñÕı³£¹¤×÷¡£
-±¾µØÄ¿Â¼µÄÂ·¾¶±ØĞëÊÇ¾ø¶ÔÂ·¾¶£¬Èç¹ûÄ¿Â¼²»´æÔÚ Docker »á×Ô¶¯ÎªÄã´´½¨Ëü¡£
-Docker ¹ÒÔØÊı¾İ¾íµÄÄ¬ÈÏÈ¨ÏŞÊÇ¶ÁĞ´£¬ÓÃ»§Ò²¿ÉÒÔÍ¨¹ı :ro Ö¸¶¨ÎªÖ»¶Á¡£
+ä¸Šé¢çš„å‘½ä»¤åŠ è½½ä¸»æœºçš„ /root/docker/memcached ç›®å½•åˆ°å®¹å™¨çš„ /root ç›®å½•ã€‚å¹¶ä¸”æŒ‡å®šåªè¯»æƒé™ã€‚
+è¿™ä¸ªåŠŸèƒ½åœ¨è¿›è¡Œæµ‹è¯•çš„æ—¶å€™ååˆ†æ–¹ä¾¿ï¼Œæ¯”å¦‚ç”¨æˆ·å¯ä»¥æ”¾ç½®ä¸€äº›ç¨‹åºåˆ°æœ¬åœ°ç›®å½•ä¸­ï¼Œæ¥æŸ¥çœ‹å®¹å™¨æ˜¯å¦æ­£å¸¸å·¥ä½œã€‚
+æœ¬åœ°ç›®å½•çš„è·¯å¾„å¿…é¡»æ˜¯ç»å¯¹è·¯å¾„ï¼Œå¦‚æœç›®å½•ä¸å­˜åœ¨ Docker ä¼šè‡ªåŠ¨ä¸ºä½ åˆ›å»ºå®ƒã€‚
+Docker æŒ‚è½½æ•°æ®å·çš„é»˜è®¤æƒé™æ˜¯è¯»å†™ï¼Œç”¨æˆ·ä¹Ÿå¯ä»¥é€šè¿‡ :ro æŒ‡å®šä¸ºåªè¯»ã€‚
 
-13¡¢Êı¾İ¾íÈİÆ÷
-Êı¾İ¾íÈİÆ÷£¬ÆäÊµ¾ÍÊÇÒ»¸öÕı³£µÄÈİÆ÷£¬×¨ÃÅÓÃÀ´Ìá¹©Êı¾İ¾í¹©ÆäËüÈİÆ÷¹ÒÔØµÄ¡£
+13ã€æ•°æ®å·å®¹å™¨
+æ•°æ®å·å®¹å™¨ï¼Œå…¶å®å°±æ˜¯ä¸€ä¸ªæ­£å¸¸çš„å®¹å™¨ï¼Œä¸“é—¨ç”¨æ¥æä¾›æ•°æ®å·ä¾›å…¶å®ƒå®¹å™¨æŒ‚è½½çš„ã€‚
 docker run --name=data -d -v /root/docker/data ubuntu:12.04
 docker run -d -p 45001:11211 --volumes-from data --name data-1 ubuntu:memcached
 docker run -d -p 45002:11211 --volumes-from data --name data-2 ubuntu:memcached
-Ê¹ÓÃ --volumes-from ²ÎÊıËù¹ÒÔØÊı¾İ¾íµÄÈİÆ÷×Ô¼º²¢²»ĞèÒª±£³ÖÔÚÔËĞĞ×´Ì¬¡£
-Èç¹ûÉ¾³ıÁË¹ÒÔØµÄÈİÆ÷£¨°üÀ¨ dbdata¡¢db1 ºÍ db2£©£¬Êı¾İ¾í²¢²»»á±»×Ô¶¯É¾³ı¡£
-Èç¹ûÒªÉ¾³ıÒ»¸öÊı¾İ¾í£¬±ØĞëÔÚÉ¾³ı×îºóÒ»¸ö»¹¹ÒÔØ×ÅËüµÄÈİÆ÷Ê±Ê¹ÓÃ docker rm -v ÃüÁîÀ´Ö¸¶¨Í¬Ê±É¾³ı¹ØÁªµÄÈİÆ÷¡£ 
-Õâ¿ÉÒÔÈÃÓÃ»§ÔÚÈİÆ÷Ö®¼äÉı¼¶ºÍÒÆ¶¯Êı¾İ¾í¡£
+ä½¿ç”¨ --volumes-from å‚æ•°æ‰€æŒ‚è½½æ•°æ®å·çš„å®¹å™¨è‡ªå·±å¹¶ä¸éœ€è¦ä¿æŒåœ¨è¿è¡ŒçŠ¶æ€ã€‚
+å¦‚æœåˆ é™¤äº†æŒ‚è½½çš„å®¹å™¨ï¼ˆåŒ…æ‹¬ dbdataã€db1 å’Œ db2ï¼‰ï¼Œæ•°æ®å·å¹¶ä¸ä¼šè¢«è‡ªåŠ¨åˆ é™¤ã€‚
+å¦‚æœè¦åˆ é™¤ä¸€ä¸ªæ•°æ®å·ï¼Œå¿…é¡»åœ¨åˆ é™¤æœ€åä¸€ä¸ªè¿˜æŒ‚è½½ç€å®ƒçš„å®¹å™¨æ—¶ä½¿ç”¨ docker rm -v å‘½ä»¤æ¥æŒ‡å®šåŒæ—¶åˆ é™¤å…³è”çš„å®¹å™¨ã€‚ 
+è¿™å¯ä»¥è®©ç”¨æˆ·åœ¨å®¹å™¨ä¹‹é—´å‡çº§å’Œç§»åŠ¨æ•°æ®å·ã€‚
 
-14¡¢ÀûÓÃÊı¾İ¾íÈİÆ÷±¸·İ¡¢»Ö¸´¡¢Ç¨ÒÆ
+14ã€åˆ©ç”¨æ•°æ®å·å®¹å™¨å¤‡ä»½ã€æ¢å¤ã€è¿ç§»
 docker run --volumes-from data -v $(pwd):/backup ubuntu:12.04 tar -czvf /backup/backup.tar.gz /root/docker/data
-ÕâÀïÎÒÃÇ´´½¨²¢µÇÂ¼ÁËÒ»¸öĞÂÈİÆ÷£¬¹ÒÔØÁËdbdataÈİÆ÷ÖĞµÄÊı¾İ¾í£¬²¢°Ñ±¾µØµÄÒ»¸öÄ¿Â¼¹ÒÔØÁË/backupÏÂ£¬
-×îºóÔÙ´«Ò»ÌõtarÃüÁîÀ´±¸·İdbdata¾íµ½/backupÏÂ£¬µ±ÃüÁîÖ´ĞĞÍê³ÉºóÈİÆ÷¾Í»áÍ£Ö¹ÔËĞĞ£¬
-²¢±£ÁôdbdataµÄ±¸·İ£¬ÔÚ±¾µØÄ¿Â¼ÏÂ»áÒ»¸ö±¸·İµÄÎÄ¼ş
-×¢£ºĞÂ´´½¨µÄÈİÆ÷ÖĞÒªÓĞtarÃüÁî£¬
-µÃµ½±¸·İÊı¾İ¾Í¿ÉÒÔ»Ö¸´»òÇ¨ÒÆÊı¾İÁË
+è¿™é‡Œæˆ‘ä»¬åˆ›å»ºå¹¶ç™»å½•äº†ä¸€ä¸ªæ–°å®¹å™¨ï¼ŒæŒ‚è½½äº†dbdataå®¹å™¨ä¸­çš„æ•°æ®å·ï¼Œå¹¶æŠŠæœ¬åœ°çš„ä¸€ä¸ªç›®å½•æŒ‚è½½äº†/backupä¸‹ï¼Œ
+æœ€åå†ä¼ ä¸€æ¡tarå‘½ä»¤æ¥å¤‡ä»½dbdataå·åˆ°/backupä¸‹ï¼Œå½“å‘½ä»¤æ‰§è¡Œå®Œæˆåå®¹å™¨å°±ä¼šåœæ­¢è¿è¡Œï¼Œ
+å¹¶ä¿ç•™dbdataçš„å¤‡ä»½ï¼Œåœ¨æœ¬åœ°ç›®å½•ä¸‹ä¼šä¸€ä¸ªå¤‡ä»½çš„æ–‡ä»¶
+æ³¨ï¼šæ–°åˆ›å»ºçš„å®¹å™¨ä¸­è¦æœ‰tarå‘½ä»¤ï¼Œ
+å¾—åˆ°å¤‡ä»½æ•°æ®å°±å¯ä»¥æ¢å¤æˆ–è¿ç§»æ•°æ®äº†
 
-15¡¢dockerÍøÂç
+15ã€dockerç½‘ç»œ
 docker run -d -p 45001:11211 --volumes-from data --name data-1 ubuntu:memcached
 docker port data-1
 11211/tcp -> 0.0.0.0:45001
 docker inspect data-1
-²é¿´dockerÈİÆ÷ÏêÇé
+æŸ¥çœ‹dockerå®¹å™¨è¯¦æƒ…
 
-16¡¢ÈİÆ÷»¥Áª
+16ã€å®¹å™¨äº’è”
 docker run -d -p 45003:11211 --link data-1:data-1 --name data-3 ubuntu:memcached
 docker exec -it data-3 bash
 cat /etc/hosts
@@ -224,8 +224,8 @@ ip addr
 apt-get install -yqq inetutils-ping
 ping data-1
 
-17¡¢Ê¹ÓÃSupervisor À´¹ÜÀí½ø³Ì
-Ê¹ÓÃ½ø³Ì¹ÜÀí¹¤¾ß supervisor À´¹ÜÀíÈİÆ÷ÖĞµÄ¶à¸ö½ø³Ì¡£Ê¹ÓÃ Supervisor ¿ÉÒÔ¸üºÃµÄ¿ØÖÆ¡¢¹ÜÀí¡¢ÖØÆôÎÒÃÇÏ£ÍûÔËĞĞµÄ½ø³Ì¡£
+17ã€ä½¿ç”¨Supervisor æ¥ç®¡ç†è¿›ç¨‹
+ä½¿ç”¨è¿›ç¨‹ç®¡ç†å·¥å…· supervisor æ¥ç®¡ç†å®¹å™¨ä¸­çš„å¤šä¸ªè¿›ç¨‹ã€‚ä½¿ç”¨ Supervisor å¯ä»¥æ›´å¥½çš„æ§åˆ¶ã€ç®¡ç†ã€é‡å¯æˆ‘ä»¬å¸Œæœ›è¿è¡Œçš„è¿›ç¨‹ã€‚
 vi Dockerfile
 
 FROM ubuntu:12.04
@@ -254,10 +254,10 @@ command=/bin/bash -c "source /etc/apache2/envvars && exec /usr/sbin/apache2 -DFO
 docker build -t ubuntu:superior .
 docker run -d -p 45022:22 -p 45080:80 --name supervisor -h hostname ubuntu:superior
 
-18¡¢Kubernetes×ÊÁÏÎÄµµ
+18ã€Kubernetesèµ„æ–™æ–‡æ¡£
 http://www.csdn.net/article/2014-10-31/2822393
 http://blog.liuts.com/post/247/
-KubernetesÏµÍ³¼Ü¹¹¼ò½é
+Kubernetesç³»ç»Ÿæ¶æ„ç®€ä»‹
 http://www.infoq.com/cn/articles/Kubernetes-system-architecture-introduction?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global
 http://www.csdn.net/article/2014-11-28/2822850-Docker
 http://www.oschina.net/p/kubernetes
@@ -265,43 +265,43 @@ http://www.d1net.com/cloud/tech/329878.html
 http://mt.sohu.com/20150730/n417842155.shtml
 http://blog.csdn.net/zhang__jiayu/article/details/42745507
 http://blog.csdn.net/zhxue123/article/details/37815957
-»·¾³´î½¨ÆëÈ«£ºhttp://segmentfault.com/a/1190000002620961
+ç¯å¢ƒæ­å»ºé½å…¨ï¼šhttp://segmentfault.com/a/1190000002620961
 
 http://www.linuxidc.com/Linux/2014-11/109725.htm
 https://linux.cn/article-4810-3.html
 
-kubernetes¼¯Èº²¿Êğ
+kubernetesé›†ç¾¤éƒ¨ç½²
 http://blog.csdn.net/qingchi0/article/details/42538549
-ÈıÖÖÍøÂçµÄÇø±ğPipework¡¢Weave¡¢Flannel¸÷×ÔµÄÓÅÊÆºÍÇø±ğ
+ä¸‰ç§ç½‘ç»œçš„åŒºåˆ«Pipeworkã€Weaveã€Flannelå„è‡ªçš„ä¼˜åŠ¿å’ŒåŒºåˆ«
 http://dockone.io/question/259
 
-¡¾¹Ù·½ÎÄµµ¡¿
+ã€å®˜æ–¹æ–‡æ¡£ã€‘
 https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/getting-started-guides/ubuntu.md
-Kubernetes Deployment On Bare-metal Ubuntu Nodes£º
+Kubernetes Deployment On Bare-metal Ubuntu Nodesï¼š
 http://kubernetes.io/v1.0/docs/getting-started-guides/ubuntu.html
 http://containertutorials.com/get_started_kubernetes/index.html
-Installing Kubernetes Cluster with 3 minions on CentOS 7 to manage pods and services£¨½ø³ÌÂß¼­½á¹¹Í¼£©£º
+Installing Kubernetes Cluster with 3 minions on CentOS 7 to manage pods and servicesï¼ˆè¿›ç¨‹é€»è¾‘ç»“æ„å›¾ï¼‰ï¼š
 http://www.severalnines.com/blog/installing-kubernetes-cluster-minions-centos7-manage-pods-services
-ÉîÈëÇ³³öDocker£¨Áù£©£ºÏñ¹È¸èÒ»Ñù²¿ÊğÄãµÄÓ¦ÓÃ
+æ·±å…¥æµ…å‡ºDockerï¼ˆå…­ï¼‰ï¼šåƒè°·æ­Œä¸€æ ·éƒ¨ç½²ä½ çš„åº”ç”¨
 http://www.infoq.com/cn/articles/deploy-your-application-like-google
-ÔÚubuntuÉÏ²¿ÊğKubernetes¹ÜÀídocker¼¯ÈºÊ¾Àı
+åœ¨ubuntuä¸Šéƒ¨ç½²Kubernetesç®¡ç†dockeré›†ç¾¤ç¤ºä¾‹
 http://segmentfault.com/a/1190000002620961
-¸úÎÒÒ»ÆğÑ§Kubernetes :http://blog.csdn.net/zhxue123/article/details/37815957
-Kubernetes³õÌ½£ºÔ­Àí¼°Êµ¼ùÓ¦ÓÃ£ºhttp://www.csdn.net/article/2014-10-31/2822393
-KubernetesÓ¦ÓÃ²¿ÊğÄ£ĞÍ½âÎö£¨²¿ÊğÆª£©¡ª¡ª±Ø¶ÁÎÄµµ£º
+è·Ÿæˆ‘ä¸€èµ·å­¦Kubernetes :http://blog.csdn.net/zhxue123/article/details/37815957
+Kubernetesåˆæ¢ï¼šåŸç†åŠå®è·µåº”ç”¨ï¼šhttp://www.csdn.net/article/2014-10-31/2822393
+Kubernetesåº”ç”¨éƒ¨ç½²æ¨¡å‹è§£æï¼ˆéƒ¨ç½²ç¯‡ï¼‰â€”â€”å¿…è¯»æ–‡æ¡£ï¼š
 http://www.csdn.net/article/2015-06-12/2824937
 
 http://containertutorials.com/index.html
 https://github.com/kubernetes/kubernetes/wiki/User-FAQ
 
-k8sÊ¹ÓÃDocker HUB¾µÏñ£º
+k8sä½¿ç”¨Docker HUBé•œåƒï¼š
 docker pull docker.io/kubernetes/pause
 docker tag -f docker.io/kubernetes/pause gcr.io/google_containers/pause:0.8.0
-kubectl_exec.mdÖ´ĞĞÃüÁî£º
+kubectl_exec.mdæ‰§è¡Œå‘½ä»¤ï¼š
 https://github.com/GoogleCloudPlatform/kubernetes/blob/release-1.0/docs/user-guide/kubectl/kubectl_exec.md
-How do I run private docker images on Google Container Engine£º
+How do I run private docker images on Google Container Engineï¼š
 http://stackoverflow.com/questions/26788485/how-do-i-run-private-docker-images-on-google-container-engine/26788669#26788669
-KubernetesÈëÃÅ£¨Èı£© - ÍøÂç£º
+Kuberneteså…¥é—¨ï¼ˆä¸‰ï¼‰ - ç½‘ç»œï¼š
 http://www.tuicool.com/articles/NRRzUbn
 
 kubectl get nodes
@@ -318,19 +318,19 @@ curl -s -L http://10.20.0.88:8080/api/v1/pods
 curl -s -L http://10.20.0.88:8080/api/v1/services
 curl -s -L http://10.20.0.88:8080/api/v1/replicationcontrollers
 
-ubuntu°²×°£ºhttps://github.com/kubernetes/kubernetes/blob/release-1.0/docs/getting-started-guides/ubuntu.md
-ÁõÌìË¹£ºhttp://blog.liuts.com/category/42/1/1/
-pod¡¢replicationControllers¡¢servicesÊ¹ÓÃ£ºhttp://www.csdn.net/article/2015-06-12/2824937
-Kubernetes Éè¼Æ¸ÅÒª(·ÇÍêÕû°æ)£ºhttp://my.oschina.net/kakablue/blog/278038
-kubernetes/cluster/addons/dns£ºhttps://github.com/kubernetes/kubernetes/tree/master/cluster/addons/dns
-Scaling Docker with Kubernetes£ºhttp://www.infoq.com/articles/scaling-docker-with-kubernetes
-kubernetes¼¸²½×ßÑ§Ï°£ºhttps://github.com/kubernetes/kubernetes/tree/master/examples/guestbook
-KubernetesÏµÍ³¼Ü¹¹¼ò½é £ºhttp://www.infoq.com/cn/articles/Kubernetes-system-architecture-introduction?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global
+ubuntuå®‰è£…ï¼šhttps://github.com/kubernetes/kubernetes/blob/release-1.0/docs/getting-started-guides/ubuntu.md
+åˆ˜å¤©æ–¯ï¼šhttp://blog.liuts.com/category/42/1/1/
+podã€replicationControllersã€servicesä½¿ç”¨ï¼šhttp://www.csdn.net/article/2015-06-12/2824937
+Kubernetes è®¾è®¡æ¦‚è¦(éå®Œæ•´ç‰ˆ)ï¼šhttp://my.oschina.net/kakablue/blog/278038
+kubernetes/cluster/addons/dnsï¼šhttps://github.com/kubernetes/kubernetes/tree/master/cluster/addons/dns
+Scaling Docker with Kubernetesï¼šhttp://www.infoq.com/articles/scaling-docker-with-kubernetes
+kuberneteså‡ æ­¥èµ°å­¦ä¹ ï¼šhttps://github.com/kubernetes/kubernetes/tree/master/examples/guestbook
+Kubernetesç³»ç»Ÿæ¶æ„ç®€ä»‹ ï¼šhttp://www.infoq.com/cn/articles/Kubernetes-system-architecture-introduction?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global
 http://www.tuicool.com/articles/uiYjmi
-Kubernetes³õÌ½£ºÔ­Àí¼°Êµ¼ùÓ¦ÓÃ£ºhttp://www.csdn.net/article/2014-10-31/2822393
-Kubernetes Éè¼Æ¸ÅÒª£ºhttp://www.oschina.net/translate/kubernetes-design-overview?cmp
-KubernetesÓ¦ÓÃ²¿ÊğÄ£ĞÍ½âÎö£¨²¿ÊğÆª£©£ºhttp://www.csdn.net/article/2015-06-12/2824937
-¹ØÓÚ¼¯ÈºÖĞ£¬boot_ipºÍservice_ipµÄÇø±ğ £ºhttp://blog.itpub.net/723887/viewspace-474914/
+Kubernetesåˆæ¢ï¼šåŸç†åŠå®è·µåº”ç”¨ï¼šhttp://www.csdn.net/article/2014-10-31/2822393
+Kubernetes è®¾è®¡æ¦‚è¦ï¼šhttp://www.oschina.net/translate/kubernetes-design-overview?cmp
+Kubernetesåº”ç”¨éƒ¨ç½²æ¨¡å‹è§£æï¼ˆéƒ¨ç½²ç¯‡ï¼‰ï¼šhttp://www.csdn.net/article/2015-06-12/2824937
+å…³äºé›†ç¾¤ä¸­ï¼Œboot_ipå’Œservice_ipçš„åŒºåˆ« ï¼šhttp://blog.itpub.net/723887/viewspace-474914/
 
 
 docker save -o  redis.tar.gz redis  latest
@@ -380,16 +380,16 @@ iptables -A OUTPUT -p udp --sport 53 -j ACCEPT
 kubectl stop rc -l "name in (redis-master, redis-slave, frontend)"
 kubectl delete service -l "name in (redis-master, redis-slave, frontend)"
 
-K8S github£ºhttps://github.com/kubernetes/kubernetes
-Õã´óÒ»¼ü°²×°£ºhttps://github.com/kubernetes/kubernetes/blob/release-1.0/docs/getting-started-guides/ubuntu.md
-Õã´óÍêÕûÌØĞÔÊ¾Àı£ºhttps://github.com/kubernetes/kubernetes/tree/release-1.0/examples/guestbook
-Õã´óDNSÑéÖ¤£ºhttps://github.com/kubernetes/kubernetes/blob/v1.0.6/cluster/addons/dns/README.md
-K8S»ùÓÚÂã½ğÊô´î½¨£ºhttps://github.com/kubernetes/kubernetes/blob/master/docs/getting-started-guides/docker-multinode.md
-Ö÷½Úµã£ºhttps://github.com/kubernetes/kubernetes/blob/master/docs/getting-started-guides/docker-multinode/master.md
-±¸½Úµã£ºhttps://github.com/kubernetes/kubernetes/blob/master/docs/getting-started-guides/docker-multinode/worker.md
-²âÊÔ»úÈº£ºhttps://github.com/kubernetes/kubernetes/blob/master/docs/getting-started-guides/docker-multinode/testing.md
-DNS£ºhttps://github.com/kubernetes/kubernetes/blob/master/docs/getting-started-guides/docker-multinode/deployDNS.md
-DNSÑéÖ¤£ºhttps://github.com/kubernetes/kubernetes/tree/master/cluster/addons/dns#how-do-i-test-if-it-is-working
+K8S githubï¼šhttps://github.com/kubernetes/kubernetes
+æµ™å¤§ä¸€é”®å®‰è£…ï¼šhttps://github.com/kubernetes/kubernetes/blob/release-1.0/docs/getting-started-guides/ubuntu.md
+æµ™å¤§å®Œæ•´ç‰¹æ€§ç¤ºä¾‹ï¼šhttps://github.com/kubernetes/kubernetes/tree/release-1.0/examples/guestbook
+æµ™å¤§DNSéªŒè¯ï¼šhttps://github.com/kubernetes/kubernetes/blob/v1.0.6/cluster/addons/dns/README.md
+K8SåŸºäºè£¸é‡‘å±æ­å»ºï¼šhttps://github.com/kubernetes/kubernetes/blob/master/docs/getting-started-guides/docker-multinode.md
+ä¸»èŠ‚ç‚¹ï¼šhttps://github.com/kubernetes/kubernetes/blob/master/docs/getting-started-guides/docker-multinode/master.md
+å¤‡èŠ‚ç‚¹ï¼šhttps://github.com/kubernetes/kubernetes/blob/master/docs/getting-started-guides/docker-multinode/worker.md
+æµ‹è¯•æœºç¾¤ï¼šhttps://github.com/kubernetes/kubernetes/blob/master/docs/getting-started-guides/docker-multinode/testing.md
+DNSï¼šhttps://github.com/kubernetes/kubernetes/blob/master/docs/getting-started-guides/docker-multinode/deployDNS.md
+DNSéªŒè¯ï¼šhttps://github.com/kubernetes/kubernetes/tree/master/cluster/addons/dns#how-do-i-test-if-it-is-working
 
 docker run -t -i -d -p 8000:8000 -p 80:80 \
     -e MARATHON_ENDPOINT=http://10.20.0.88:8080,http://10.20.0.89:8080,http://10.20.0.90:8080 \
@@ -402,7 +402,7 @@ docker run -t -i -d -p 8000:8000 -p 80:80 \
     gregory90/bamboo:0.2.11
 hostname:CLUSTER:10.20.0.98
 
-DNS£º
+DNSï¼š
 curl 10.20.0.98:8123/v1/hosts/django-docker.marathon.mesos
 curl 10.20.0.98:8123/v1/services/_django-docker._tcp.marathon.mesos
 
@@ -415,9 +415,9 @@ dig _django-docker._tcp.marathon.mesos SRV
 curl -X POST http://10.20.0.88:8080/v2/apps -d @mysql.json -H "Content-type: application/json"
 
 Docker container run error: Container exited on error: exited with status 1
-DOCKERÈ«¾°Í¼£º
+DOCKERå…¨æ™¯å›¾ï¼š
 http://container-solutions.com/continuous-delivery-with-docker-on-mesos-in-less-than-a-minute-part-2/
-ÊıÈË¿Æ¼¼£º
+æ•°äººç§‘æŠ€ï¼š
 http://support.dataman-inc.com/posts/view/56308/
 
 docker run -v /var/run/docker.sock:/var/run/docker.sock \
@@ -437,7 +437,7 @@ DATABASES = {
 docker run -i -t \
     -e MYSQL_DATABASE="mysite" \
     -e MYSQL_USER="mysite" \
-    -e MYSQL_PASSWORD="Admin@123" \
+    -e MYSQL_PASSWORD="XXXXXXXXXXXX@XXXXXXXXXXXX" \
     -e=MYSQL_HOST="mysql-mysite-product.marathon.mesos" \
     -e MYSQL_PORT="31234" \
     ubuntu:djangosave /bin/sh -c 'cd /opt/mysite/mysite && ./upsetting.sh && cd /opt/mysite && python manage.py runserver 0.0.0.0:8888'
@@ -458,7 +458,7 @@ EOF
 docker run -i -t \
     -e MYSQL_DATABASE="mysite" \
     -e MYSQL_USER="mysite" \
-    -e MYSQL_PASSWORD="Admin@123" \
+    -e MYSQL_PASSWORD="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX@XXXXXXXXXXXX" \
     -e=MYSQL_HOST="mysql-mysite-product.marathon.mesos" \
     -e MYSQL_PORT="31234" \
     ubuntu:djangosave /bin/sh -c 'cd /opt/mysite/uwsgi && uwsgi uwsgi.ini && service nginx start'
@@ -467,7 +467,7 @@ docker run -i -t \
 docker run --name=product-envname-django -d -it -p 80:80 -p 443:443 \
     -e MYSQL_DATABASE="mysite" \
     -e MYSQL_USER="mysite" \
-    -e MYSQL_PASSWORD="Admin@123" \
+    -e MYSQL_PASSWORD="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX@XXXXXXXXXXXXXXXXXXXXXXXX" \
     -e MYSQL_HOST="10.20.0.88" \
     -e MYSQL_PORT="31111" \
     -v /opt/DJANGO-DEMO/files/sharedfiles:/opt/DJANGO-DEMO/applications/mysite/template/sharedfiles \
@@ -476,9 +476,9 @@ docker run --name=product-envname-django -d -it -p 80:80 -p 443:443 \
 
 docker run --name=product-envname-mysql -d -it -p 31111:3306 \
     -e MYSQL_DATABASE="mysite" \
-    -e MYSQL_ROOT_PASSWORD="Admin@123" \
+    -e MYSQL_ROOT_PASSWORD="XXXXXXXXXXXX@XXXXXXXXXXXX" \
     -e MYSQL_USER="mysite" \
-    -e MYSQL_PASSWORD="Admin@123" \
+    -e MYSQL_PASSWORD="XXXXXXXXXXXX@XXXXXXXXXXXX" \
     mysql:5.6
 
 https://docs.docker.com/machine/install-machine/
@@ -524,7 +524,7 @@ docker save -o  nsc-django-1.0.0.1.tar.gz nsc/django:1.0.0.1
 https://www.digitalocean.com/community/tutorials/how-to-configure-a-production-ready-mesosphere-cluster-on-ubuntu-14-04
 http://frankhinek.com/build-mesos-multi-node-ha-cluster/
 
-×¼±¸¹¤×÷£º
+å‡†å¤‡å·¥ä½œï¼š
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv E56151BF
 DISTRO=$(lsb_release -is | tr '[:upper:]' '[:lower:]')
 CODENAME=$(lsb_release -cs)
@@ -538,7 +538,7 @@ sudo apt-get install oracle-java8-installer
 
 sudo apt-get -y install mesos marathon
 
-Master½Úµã°²×°£º
+MasterèŠ‚ç‚¹å®‰è£…ï¼š
 echo manual | sudo tee /etc/init/mesos-slave.override
 echo [10.20.0.90] | sudo tee /etc/mesos-master/hostname
 echo [10.20.0.90] | sudo tee /etc/mesos-master/ip
@@ -558,7 +558,7 @@ exec /usr/bin/marathon --ha --hostname 10.20.0.88
 vi /etc/hostname
 10.20.0.88
 
-°²×°chronos£º
+å®‰è£…chronosï¼š
 sudo apt-get -y install chronos
 service chronos start
 
@@ -567,7 +567,7 @@ sudo restart zookeeper
 sudo restart mesos-master
 sudo restart marathon
 
-Slave½Úµã°²×°£º
+SlaveèŠ‚ç‚¹å®‰è£…ï¼š
 echo manual | sudo tee /etc/init/mesos-master.override
 echo manual | sudo tee /etc/init/zookeeper.override
 echo manual | sudo tee /etc/init/marathon.override
@@ -585,14 +585,14 @@ sudo stop marathon
 sudo restart mesos-slave
 reboot
 
-mesos-DNS°²×°£º
+mesos-DNSå®‰è£…ï¼š
 
 
 
-°²×°DockerË½ÓĞ²Ö¿â£º
+å®‰è£…Dockerç§æœ‰ä»“åº“ï¼š
 https://hub.docker.com/_/registry/
 https://hub.docker.com/r/marvambass/nginx-registry-proxy/#creating-a-self-signed-ssl-cert
-Ë½ÓĞ²Ö¿âAPI£º
+ç§æœ‰ä»“åº“APIï¼š
 http://docs.docker.com/registry/spec/api/
 
 http://10.20.0.189:5000/v2/_catalog
@@ -613,7 +613,7 @@ python -m SimpleHTTPServer $PORT
 curl 10.20.0.98:8123/v1/hosts/mysqldb-envname-product.marathon.mesos
 curl 10.20.0.98:8123/v1/services/_mysqldb-envname-product._tcp.marathon.mesos
 
-¸ß¼¶ÓÃ·¨
+é«˜çº§ç”¨æ³•
 Advanced Deployment with Marathon
 https://mesosphere.github.io/marathon/docs/deployment-design-doc.html
 
